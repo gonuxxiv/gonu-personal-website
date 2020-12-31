@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-// import { Button } from './Button';
 import './Navbar.css';
+import Anchorlink from 'react-anchor-link-smooth-scroll';
+import Headroom from 'react-headroom';
  
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -25,42 +26,37 @@ function Navbar() {
     window.addEventListener('resize', showButton);
 
     return (
-        <div>
+        <Headroom>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
-                        Home
-                    </Link>
-                    <div className='menu-icon' onClick={handleClick}>
-                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-                    </div>
+                    <Anchorlink href="#main" className="navbar-logo" onClick={closeMobileMenu}>
+                        Gonu K.
+                    </Anchorlink>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Home
-                            </Link>
+                            <Anchorlink href="#education" class='nav-links' onClick={closeMobileMenu}>
+                                Education
+                            </Anchorlink>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/aboutMe' className='nav-links' onClick={closeMobileMenu}>
-                                About Me
-                            </Link>
+                            <Anchorlink href="#skills" class='nav-links' onClick={closeMobileMenu}>
+                                Skills
+                            </Anchorlink>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/portfolios' className='nav-links' onClick={closeMobileMenu}>
+                            <Anchorlink href="#portfolios" class='nav-links' onClick={closeMobileMenu}>
                                 Portfolios
-                            </Link>
+                            </Anchorlink>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                            <Anchorlink href="#footer" class='nav-links' onClick={closeMobileMenu}>
                                 Contact
-                            </Link>
+                            </Anchorlink>
                         </li>
                     </ul>
-                    {/* {button && <Button buttonStyle='btn--outlines'>Portfolios</Button>} */}
                 </div>
-            </nav>
-        
-        </div>
+            </nav>       
+        </Headroom>
     )
 }
 

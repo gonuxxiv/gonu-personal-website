@@ -4,41 +4,35 @@ import './Cards.css';
 
 function Cards() {
     return (
-        <div className='cards'>
-            <h1>Check out my resume!</h1>
+        <div className='cards' id='portfolios'>
+            <h1>Check out my works!</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem 
-                            src="images/img-1.jpg"
-                            text="Hello!"
-                            label="Resume"
-                            path="/aboutMe"
+                            src="images/robat.png"
+                            text="RoBat: the Batting Game"
+                            label="Mobile Game App"
+                            path="https://play.google.com/store/apps/details?id=com.ESGK.RoBatTheBattingGame"
                         />
                         <CardItem 
-                            src="images/img-2.jpg"
-                            text="Hello!"
-                            label="Resume"
-                            path="/aboutMe"
+                            src="images/help.jpg"
+                            text="Help!"
+                            label="Web Application"
+                            path="https://helpservices.herokuapp.com/"
                         />
                     </ul>
                     <ul className="cards__items">
                         <CardItem 
                             src="images/img-1.jpg"
-                            text="Hello!"
-                            label="Resume"
+                            text="Interactive Hangman"
+                            label="Javascript Game"
                             path="/aboutMe"
                         />
                         <CardItem 
                             src="images/img-2.jpg"
-                            text="Hello!"
-                            label="Resume"
-                            path="/aboutMe"
-                        />
-                        <CardItem 
-                            src="images/img-1.jpg"
-                            text="Hello!"
-                            label="Resume"
+                            text="Zombiehunter"
+                            label="Javascript Game"
                             path="/aboutMe"
                         />
                     </ul>
