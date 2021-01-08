@@ -5,6 +5,7 @@ import Cards from '../Cards';
 import Footer from '../Footer';
 import Education from '../Education';
 import Skills from '../Skills';
+import ArtisticPortfolios from '../ArtisticPortfolios';
 
 function Home () {
     return (
@@ -13,6 +14,7 @@ function Home () {
             <Education />
             <Skills />
             <Cards />
+            <ArtisticPortfolios />
             <Footer />
         </>
     )

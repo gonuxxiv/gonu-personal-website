@@ -1,62 +1,112 @@
 .educ-container {
     /* background: url('../images/img-1.jpg') center center/cover no-repeat; */
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-color: seashell;
+    /* background-color: rgb(235, 213, 167); */
+    background: linear-gradient( rgb(162, 142, 101), #2C2C2C 70%);
+    /* background: url("../images/education.jpg"); */
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
+    overflow: auto;
 }
 
 .educ-container > h1 {
     color: #fff;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Sofia';
     /* -webkit-text-stroke: 0.5px rgb(99, 12, 12); */
-    font-size: 100px;
-    margin-top: 50px;
+    font-size: 10vw;
+    margin-top: 10px;
 }
 
-.educ-container > p {
-    margin-top: 8px;
+.educ-list {
+    margin-top: 20px;
     color: #fff;
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.main-btns {
-    margin-top: 32px;;
+.educ-detail {
+    list-style: none;
+    margin-left: 0px;
+    padding: 0;
 }
 
-.main-btns .btn {
-    margin: 6px;
+.educ-detail > li::before {
+    margin-bottom: 50px;
+    content: "🎓"
+}
+
+.my-educ {
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-areas: "image detail";
+}
+
+#sfu-detail {
+    margin-left: -9vh;
+}
+
+.my-educ > img {
+    grid-area: image;
+}
+
+.my-educ > div {
+    grid-area: detail;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+    margin-left: 50px;
+    padding-left: 0;
+}
+
+.bcit-logo {
+    height: 8vh;
+    width: 40vh;
+    border-radius: 10px;
+}
+
+.sfu-logo {
+    height: 8vh;
+    width: 40vh;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 960px) {
     .educ-container > h1 {
         font-size: 70px;
-        margin-top: 150px;
+        margin-top: 60px;
+    }
+
+    #sfu-detail {
+        margin-left: 0vh;
     }
 }
 
 @media screen and (max-width: 768px) {
     .educ-container > h1 {
         font-size: 50px;
-        margin-top: 100px;
+        margin-top: 60px;
     }
 
     .educ-container > p {
         font-size: 25px;
     }
 
-    .btn-mobile {
-        display: block;
-        text-decoration: none;
+    .my-educ > div {
+        grid-column-start: 1;
     }
-    
-    .btn {
-        width: 100%;
+
+    #sfu-detail {
+        margin-left: 0;
+    }
+
+    .my-educ {
+        display: grid;
+        margin-bottom: 50px;
+        grid-template-areas: "image" 
+                            "detail";
     }
 }
