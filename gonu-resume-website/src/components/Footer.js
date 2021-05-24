@@ -14,8 +14,8 @@ function Footer() {
                             Gonu K.
                         </Anchorlink>
                     </div>
-                    <small className='website-rights'>Email: gonukimxxiv@gmail.com</small>
-                    <small className='website-rights'>Phone: (778)-866-3657</small>
+                    <small id="email" className='website-rights'>Email: gonukimxxiv@gmail.com</small>
+                    <small id="phoneNum" className='website-rights'>Phone: (778)-866-3657</small>
                     <div className="social-icons">
                         <a className="social-icon-link linkedin"
                             href="https://www.linkedin.com/in/gonu-kim-782a281aa/"

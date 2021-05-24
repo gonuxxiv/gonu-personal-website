@@ -1,7 +1,7 @@
 .main-container {
-    background: url('../images/mugshot2.jpg') center center/cover no-repeat;
+    background: url('../images/me.jpg') center center/cover no-repeat;
     background-size: contain;
-    background-color:rgb(162, 142, 101);
+    background-color: #508a0574;
     height: 70vh;
     width: 100%;
     display: flex;
@@ -18,9 +18,9 @@
 
 .main-container > h1 {
     color: #fff;
-    font-family: 'Sofia';
+    font-family: 'Lucida Grande';
     font-size: 100px;
-    margin-top: 300px;
+    margin-top: 28vh;
 }
 
 .main-container > p {

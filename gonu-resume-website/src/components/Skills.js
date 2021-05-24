@@ -17,6 +17,9 @@ function Skills() {
                         <li class="skill">Python</li>
                         </SlideInLists>
                         <SlideInLists>
+                        <li class="skill">AWS</li>
+                        </SlideInLists>
+                        <SlideInLists>
                         <li class="skill">JavaScript</li>
                         </SlideInLists>
                         <SlideInLists>
@@ -26,10 +29,13 @@ function Skills() {
                         <li class="skill">Java</li>
                         </SlideInLists>
                         <SlideInLists>
-                        <li class="skill">C#</li>
+                        <li class="skill">Unity C#</li>
                         </SlideInLists>
                     </ul>
                     <ul className="list2">
+                        <SlideInLists>
+                        <li class="skill">WordPress</li>
+                        </SlideInLists>
                         <SlideInLists>
                         <li class="skill">React.js</li>
                         </SlideInLists>
@@ -37,13 +43,13 @@ function Skills() {
                         <li class="skill">HTML/CSS</li>
                         </SlideInLists>
                         <SlideInLists>
-                        <li class="skill">SQL</li>
+                        <li class="skill">MySQL</li>
                         </SlideInLists>
                         <SlideInLists>
-                        <li class="skill">Git Workflow</li>
+                        <li class="skill">Flutter</li>
                         </SlideInLists>
                         <SlideInLists>
-                        <li class="skill">Native Korean speaker</li> 
+                        <li class="skill">Android Studio</li> 
                         </SlideInLists>
                     </ul>
                 </div>
